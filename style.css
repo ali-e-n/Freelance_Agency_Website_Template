@@ -106,16 +106,20 @@
     align-items: center;
 }
 .btn{
-    width: 100px;
-    height: 25px;
+    width: 142px;
+    height: 40px;
     border: 2px solid #fffffff0;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 0.7rem;
     text-transform: uppercase;
     line-height: 0.75rem;
     letter-spacing: 0.15rem;
-    background-color: #6f0aa2f0;
+    background-color: #9411d5f0;
     color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
 
 }
 .btn:hover{
@@ -124,6 +128,11 @@
     border: 2px solid #d1cb0df0;
     transition: 0.5s;
     transform: scale(1.1, 1.1);
+}
+
+#btn-cta
+{
+    color: #ffffff; 
 }
 
 /* Hero Section start */
@@ -166,7 +175,7 @@
 .div1 p{
     font-size: .85rem;
     color: #ffffff;
-    margin-top: -5rem;
+    margin-top: -3rem;
     margin-bottom: 1rem;
     padding-right: 30px;
     text-align: start;
@@ -180,6 +189,7 @@
     font-size: 42px;
     line-height: 1.3em;
     color: #ffffff;
+    text-align: left;
     
 }
 .div2{
@@ -206,13 +216,9 @@
 }
 
 .cta-img{
-    width: 100%;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.3em;
+    width: 25rem;
     color: #ffffff;
     padding-top: 80px;
-
 }
 /* Hero Section end */
 
