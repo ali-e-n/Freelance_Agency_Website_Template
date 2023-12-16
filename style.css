@@ -165,22 +165,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    align-content: space-between;
     height: 100%;
     width: 50%;
+    gap: 1.5rem;
     /* background-color: #6f0aa2f0;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #b8b0b0; */
     
 }
 .div1 p{
-    font-size: .85rem;
+    font-size: .75rem;
     color: #ffffff;
-    margin-top: -3rem;
+    /* margin-top: rem; */
     margin-bottom: 1rem;
     padding-right: 30px;
     text-align: start;
     width: 80%;
     align-items: flex-start;
+    line-height: 1.5rem;
     
 }
 .div1 h1{
@@ -228,7 +231,7 @@
 .dropDown-menu{
     display: none;
 }
-p{
+dropDown-menu p{
     font-size: 1rem;
     text-align: center;
     margin-top: 2rem;
@@ -239,7 +242,102 @@ p{
 .menu-btn1{
     display: none;
 }
+
+/* Services */
+.small-headline{
+    text-align: center;
+    /* background-color: #f9f9f9; */
+    width: 100%;
+    height: 7vh;
+    line-height: 50px;
+
+}
+.services-container{
+    width: 100%;
+    height: 90vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    /* align-items: center; */
+    /* position: absolute; */
+    /* padding-left: 200px; */
+    gap: 2rem;
+    
+}
+
+
+
+.services-div1{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+    /* margin-right: 21px; */
+    /* position: relative; */
+    /* padding-right: 20px; */
+    /* top100px; */
+    /* left: 15px; */
+    width:90%;
+    height: 25%;
+    /* background-color: #151580; */
+    /* border-right: #9430d6 5px solid; */
+}
+.services-dev1 p{
+    /* text-align: justify-right; */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* align-self: flex-end; */
+}
+
+.services-div2{
+    margin-right: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* padding-left: 20px; */
+    /* position: relative; */
+    /* top:205px; */
+    /* left:10px; */
+    width: 90%;
+    height: 50%;
+    background-color: #13c133;
+    /* border-left: #f7f7f7 5px solid; */
+
+}
+.services-div3{
+    position: relative;
+    top:50px;
+    left: 15px;
+    width: 50%;
+    height: 25%;
+    /* background-color: #151580; */
+}
+
+.services-div4{
+    position: relative;
+    top:205px;
+    right: 15px;
+    width: 50%;
+    height: 25%;
+    /* background-color: #13c133; */
+}
 /* Responsive Design */
+
+
+@media (max-width:720px) and (min-width:375px)
+{
+
+    
+
+}
 
 @media (max-width:720px){
 .top-panel{
@@ -316,42 +414,66 @@ p{
 /* Button */
 /* Cta container */
 .cta-container{
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 630px;
+    height: 60%;
+    /* height: 630px; */
 
 }
 .div1, .div2{
-    display: block;
+    display: flex;  
+    flex-direction: column;
     width: 100%;
     font-weight: 700;
     font-size: 32px;
-    line-height: 1em;
+    /* line-height: 1em; */
     color: #ffffff;
-    /* padding-left: 20px; */
+    padding-left: 20px;
     align-self:center;
-
+    
     
 }
 .div1 h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    width: 100%;
+    height: 10vh;
     color: #ffffff;
     /* padding-left: 20px; */
-    align-self:center;
-    margin-top: 3rem;
+    align-self:flex-start;
+    text-align: start;
+    padding-top: 8px;
+    padding-bottom: 80px;
+    margin: auto;
 }
 .div1 p{
-    font-size: 0.65rem;
-    font-weight: normal;
-    line-height: normal;
+    padding-top: 100px;
+    /* padding-left: 20px; */
+    padding-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #D4CCFF;
    
 }
+.div1 button{
+    width: 124px;
+    height: 27px;
+    font-size: 0.55rem;
+    /* padding-left: 0px; */
+
+}
+.div2{
+    width: auto;
+}
 .cta-img{
+    /* padding-bottom: 1rem; */
     width: auto;
     height: 17rem;
-    padding: auto;
+    position: absolute;
+    top: 50;
 
 }
 /* .div2{
@@ -364,8 +486,10 @@ p{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #b8b0b0; */
 
-  
-
+ .services-container{
+    flex-direction: column;
+    
+ }
 
 
 }
