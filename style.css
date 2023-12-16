@@ -413,6 +413,19 @@ dropDown-menu p{
 
 /* Button */
 /* Cta container */
+.hero-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #8211bbf0;
+    height: 140vh;
+    width: 100%;
+    
+   
+  
+ 
+ }
 .cta-container{
     width: auto;
     display: flex;
@@ -421,6 +434,7 @@ dropDown-menu p{
     align-items: center;
     height: 60%;
     /* height: 630px; */
+    /* gap: 1rem; */
 
 }
 .div1, .div2{
@@ -438,24 +452,22 @@ dropDown-menu p{
 }
 .div1 h1{
     font-size: 2rem;
-    width: 100%;
-    height: 10vh;
+    width: 80%;
     color: #ffffff;
     /* padding-left: 20px; */
     align-self:flex-start;
     text-align: start;
-    padding-top: 8px;
-    padding-bottom: 80px;
-    margin: auto;
+    /* padding-top: 48px;
+    /* padding-bottom: 80px; */
+    /* margin: auto;  */
+    
 }
 .div1 p{
-    padding-top: 100px;
-    /* padding-left: 20px; */
-    padding-bottom: 20px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
     color: #D4CCFF;
+    
    
 }
 .div1 button{
@@ -465,15 +477,13 @@ dropDown-menu p{
     /* padding-left: 0px; */
 
 }
-.div2{
-    width: auto;
-}
+
 .cta-img{
     /* padding-bottom: 1rem; */
     width: auto;
     height: 17rem;
-    position: absolute;
-    top: 50;
+    /* position: absolute;
+    bottom: 0; */
 
 }
 /* .div2{
