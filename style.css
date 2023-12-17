@@ -6,12 +6,15 @@
 }
  a{
     text-decoration: none;
-    color: #ffbb00;}
+    color: #ffb428;}
     a:hover{
         transition: 0.5s;
         transform: scale(1.6, 1.6);
     }
+body{
+    background-color: #e3edf7;
 
+}
      
 .header-container {
     position:fixed;
@@ -64,7 +67,7 @@
     background-color:none ;
     height: 9vh;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #e3edf7;
     /* box-shadow: 0px 0px 10px 0px #060000; */
 }
 .logo-image{
@@ -116,10 +119,8 @@
     letter-spacing: 0.15rem;
     background-color: #9411d5f0;
     color: #ffffff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding: 5px 3px 5px 3px;
+  
 
 }
 .btn:hover{
@@ -255,7 +256,7 @@ dropDown-menu p{
 .services-container{
     width: 100%;
     height: 90vh;
-    background-color: #ffffff;
+    background-color: #851313;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -268,7 +269,7 @@ dropDown-menu p{
 }
 
 
-
+/*
 .services-div1{
     margin-left: 200px;
     display: flex;
@@ -280,17 +281,17 @@ dropDown-menu p{
     /* position: relative; */
     /* padding-right: 20px; */
     /* top100px; */
-    /* left: 15px; */
+    /* left: 15px; 
     width:90%;
     height: 25%;
     /* background-color: #151580; */
-    /* border-right: #9430d6 5px solid; */
+    /* border-right: #9430d6 5px solid; 
 }
-.services-dev1 p{
-    /* text-align: justify-right; */
+.services-dev1 p {
+    /* text-align: justify-right; 
     /* padding: 0; */
     /* margin: 0; */
-    /* align-self: flex-end; */
+    /* align-self: flex-end; 
 }
 
 .services-div2{
@@ -305,11 +306,11 @@ dropDown-menu p{
     /* padding-left: 20px; */
     /* position: relative; */
     /* top:205px; */
-    /* left:10px; */
+    /* left:10px; 
     width: 90%;
     height: 50%;
     background-color: #13c133;
-    /* border-left: #f7f7f7 5px solid; */
+    /* border-left: #f7f7f7 5px solid; 
 
 }
 .services-div3{
@@ -318,7 +319,7 @@ dropDown-menu p{
     left: 15px;
     width: 50%;
     height: 25%;
-    /* background-color: #151580; */
+    /* background-color: #151580; 
 }
 
 .services-div4{
@@ -327,17 +328,163 @@ dropDown-menu p{
     right: 15px;
     width: 50%;
     height: 25%;
-    /* background-color: #13c133; */
+    /* background-color: #13c133; 
 }
-/* Responsive Design */
 
+*/
 
-@media (max-width:720px) and (min-width:375px)
-{
+/* ----------------Responsive Design---------------- */
 
+.feature-title-container{
+    text-align: center;
+    background-color: #e3edf7;
+    width: 100%;
+    height: 9vh;
+    padding-bottom: 10px;
+}
+.feature-title{
+    text-align: center;
+    font-size: 1rem;
+    /* font-size: 0.7rem; */
+    text-transform: uppercase;
+    line-height: 9vh;
+    letter-spacing: 0.15rem;
+    color: #0054FF;
+    font-weight: 500;
+    /* border-bottom: #d8e6f0 5px solid; */
+
+   
+  
     
+}
+
+.services-container{
+    width: 100%;
+    height: 50vh;
+    background-color: #e3edf7;
+    margin-bottom: 30px;
+}
+
+.services-div-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    /* background-color: #461b1b; */
+}
+
+.services-div-left h1{
+     font-size: 1.5rem;
+     margin: 10px 0px 10px 0px;
+}
+.services-div-left p{
+    font-size: 1rem;
+    color: #05113c;
+    text-align:right;
+    max-width: 25rem;
+}
+
+.services-div-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding-top: 32px;
+    /* background-color: #a08787; */
+}
+.services-div-right button{
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.2rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    line-height: 9vh;
+    letter-spacing: 0.15rem;
+    color: #e41515;
 
 }
+
+
+/* -----------Accodion---------------- */
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    /* border-radius: 8px; */
+    /* background-color: #fff; */
+    border:  1px solid #b4acac;
+    /* box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7); */
+    /* padding: 8px; */
+    margin-bottom: 10px;
+
+}
+
+.accordion li label{
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #05113c;
+    transition: all 0.4s ease;
+    /* text-align: justify; */
+    width: 100%;
+
+}
+.accordion li label::after {
+    content: "+";
+    padding-left: 80%;
+    font-size: 1.1rem;
+    color: #e41515;
+    width: 100%;
+}
+
+
+.accordion li input[type="radio"]{
+    display: none;
+}
+
+.accordion .content {
+    font-size: 1rem;
+    color: #05113c;
+    text-align:left;
+    max-width: 25rem;
+    max-height: 0;
+    overflow: hidden;
+ }
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 100%;
+    transition: max-height 0.5s  padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked  + label::after {
+    content: "-";
+    padding-left: 80%;
+    font-size: 1.5rem;
+    color: #e41515;
+}
+
+
+.services-container .row-reverse{
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+/* ----------------Responsive Design---------------- */
+
+
+
 
 @media (max-width:720px){
 .top-panel{
@@ -376,7 +523,7 @@ dropDown-menu p{
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem; 
-    background-color: #6f0aa2f0;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 /* Animation to Dropdown Menu */
 .animate {
@@ -427,7 +574,7 @@ dropDown-menu p{
  
  }
 .cta-container{
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -439,14 +586,16 @@ dropDown-menu p{
 }
 .div1, .div2{
     display: flex;  
+    flex : 1;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     font-weight: 700;
-    font-size: 32px;
+    /* font-size: 12px; */
     /* line-height: 1em; */
     color: #ffffff;
     padding-left: 20px;
     align-self:center;
+    /* min-width: 15rem; */
     
     
 }
@@ -463,6 +612,7 @@ dropDown-menu p{
     
 }
 .div1 p{
+    margin-right: 0;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -498,8 +648,39 @@ dropDown-menu p{
 
  .services-container{
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 230px;
+
     
  }
+ .services-div-left{
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 5px 10px 10px;
 
+}
 
+ .services-div-left h1{
+    font-size: 1.3rem;
+    padding: 5px 0px 5px 0px;
+}
+
+.services-div-left p{
+    font-size: .8rem;
+    color: #05113c;
+    text-align:left;
+    max-width: auto;
+}
+.services-div-right{
+    align-items: flex-start;
+    width: auto;
+    padding: 10px 5px 10px 10px;
+    /* background-color: #a08787; */
+}
+
+.accordion li label::after {
+
+    padding-left:120px;
+} 
 }
